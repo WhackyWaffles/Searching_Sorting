@@ -1,17 +1,19 @@
 package models;
 
-public class Price {
+public class Product {
     private final int price;
+    private final String name;
 
-    public Price(int price) {
+    public Product(String name, int price) {
+        this.name = name;
         this.price = price;
     }
 
-    public int getPrice() {
+    public String getName() {
+        return name;
+    }
+
+    public int getInt() {
         return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
     }
 }
